@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Avançado</title>
+    <meta name="description" content="Blog avançado com SEO, integração com redes sociais e sistema de login para visitantes.">
+    <meta name="keywords" content="blog, SEO, redes sociais, login, afiliados">
+    <meta name="author" content="Seu Nome">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .post {
+            margin-bottom: 20px;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        .affiliates {
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .affiliates a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .affiliates a:hover {
+            text-decoration: underline;
+        }
+        .social {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social a {
+            margin: 0 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .social a:hover {
+            color: #45a049;
+        }
+        .login {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .drop-area {
+            width: 300px;
+            height: 150px;
+            border: 2px dashed #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .drop-area:hover {
+            background-color: #f0f0f0;
+        }
+        .drop-area p {
+            color: #4CAF50;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Blog Avançado</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#blog">Blog</a>
+        <a href="#contato">Contato</a>
+        <a href="#afiliados">Afiliados</a>
+    </nav>
+
+    <div class="container">
+        <section id="blog">
+            <div class="post">
+                <h2>Primeiro Post</h2>
+                <p>Bem-vindo ao meu blog! Este é o primeiro post. Aqui, você encontrará conteúdos interessantes sobre diversos tópicos.</p>
+                <a href="#" class="button">Leia Mais</a>
+            </div>
+            <div class="post">
+                <h2>Segundo Post</h2>
+                <p>Este é mais um exemplo de post. Continue nos acompanhando para mais novidades e conteúdos incríveis!</p>
+                <a href="#" class="button">Leia Mais</a>
+            </div>
+        </section>
+
+        <section id="afiliados" class="affiliates">
+            <h2>Links de Afiliados</h2>
+            <p>Confira nossas recomendações:</p>
+            <ul>
+                <li><a href="#">Produto 1 - Oferta Exclusiva</a></li>
+                <li><a href="#">Produto 2 - Melhor Preço Garantido</a></li>
+                <li><a href="#">Produto 3 - Frete Grátis</a></li>
+            </ul>
+        </section>
+
+        <section class="social">
+            <h2>Nos Siga nas Redes Sociais</h2>
+            <a href="#" target="_blank">&#x1F426; Twitter</a>
+            <a href="#" target="_blank">&#x1F4F1; Facebook</a>
+            <a href="#" target="_blank">&#x1F4F2; Instagram</a>
+        </section>
+
+        <section class="login">
+            <h2>Acesse sua Conta</h2>
+            <form>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Seu usuário" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Sua senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="drop-area" id="drop-area">
+            <p>Arraste e solte o arquivo aqui ou clique para selecionar</p>
+        </section>
+
+        <input type="file" id="file-input" style="display: none;" />
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Meu Blog Avançado. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const dropArea = document.getElementById("drop-area");
+        const fileInput = document.getElementById("file-input");
+
+        dropArea.addEventListener("click", () => {
+            fileInput.click();
+        });
+
+        dropArea.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropArea.style.backgroundColor = "#f7f7f7";
+        });
+
+        dropArea.addEventListener("dragleave", () => {
+            dropArea.style.backgroundColor = "#fff";
+        });
+
+        dropArea.addEventListener("drop", (e) => {
+            e.preventDefault();
+            dropArea.style.backgroundColor = "#fff";
+
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                alert("Arquivo recebido: " + files[0].name);
+            }
+        });
+
+        fileInput.addEventListener("change", (e) => {
+            const files = e.target.files;
+            if (files.length > 0) {
+                alert("Arquivo selecionado: " + files[0].name);
+            }
+        });
+    </script>
+
+</body>
+</html>
